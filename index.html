@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>[Thực hành] Tạo menu dọc - CodeGym</title>
+  <style>
+
+#menu ul, #menu li {
+    margin: 0;
+    padding: 0;
+}
+
+
+#menu li {
+    list-style: none; 
+    position: relative; 
+    width: 120px; 
+    height: 30px; 
+    padding: 0 20px; 
+    background-color: #000000; 
+    line-height: 30px; 
+    cursor: pointer; 
+}
+
+
+#menu a {
+    text-decoration: none; 
+    color: #ffffff;
+    display: block;
+}
+
+
+#menu li:hover {
+    background-color: #333333;
+}
+
+
+#menu li ul {
+    position: absolute;
+    top: 0; 
+    left: 160px;
+    visibility: hidden;
+}
+
+
+#menu li:hover > ul {
+    visibility: visible;
+}
+  </style>
+</head>
+<body>
+
+  <div id="menu">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Sản phẩm</a>
+        <ul>
+          <li><a href="#">Laptop</a></li>
+          <li>
+            <a href="#">Điện thoại</a>
+            <ul>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Samsung</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Phụ kiện</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Dịch vụ</a></li>
+      <li><a href="#">Tin tức</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
